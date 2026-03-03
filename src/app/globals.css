@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+
+  --color-cream: #FFF8F2;
+  --color-cream-dark: #F5EBE0;
+  --color-blush: #F2C4CE;
+  --color-blush-dark: #D4939F;
+  --color-rose: #C97D8A;
+  --color-chocolate: #6B3A3A;
+  --color-choco-dark: #4A2828;
+  --color-mocha: #8B5E52;
+  --color-gold: #C9A96E;
+  --color-gold-light: #E8D5B7;
+
+  --font-serif: "Cormorant Garamond", serif;
+  --font-sans: "Inter", sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 40px;
+
+  --shadow-sm: 0 2px 12px rgba(107, 58, 58, 0.08);
+  --shadow-md: 0 8px 32px rgba(107, 58, 58, 0.14);
+  --shadow-lg: 0 20px 60px rgba(107, 58, 58, 0.18);
+}
+
+:root {
+  --background: #FFF8F2;
+  --foreground: #2D1C1C;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+h4,
+.serif {
+  font-family: var(--font-serif);
+}
+
+.animate-float {
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+
+  50% {
+    transform: translateY(-20px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-pulse-slow {
+  animation: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes pulse {
+
+  0%,
+  100% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: .5;
+  }
+}
