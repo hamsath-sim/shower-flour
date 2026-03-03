@@ -21,7 +21,7 @@ A full-stack web application for managing baking courses, enrollments, and user 
 ### Prerequisites
 
 - Node.js (v18 or later)
-- Supabase account and PostgreSQL database URI
+- Access to the shared Supabase PostgreSQL database URI (contact lead developer)
 
 ### Installation
 
@@ -77,11 +77,11 @@ npm install
 ### 3. Environment Setup
 Create a `.env` file in the root directory. You can copy the values from the lead developer or use this template:
 ```env
-# Supabase PostgreSQL Connection (Ask lead for dev DB or use your own)
-DATABASE_URL="postgresql://postgres:..."
+# Shared Supabase PostgreSQL Connection (Contact lead developer for the URI)
+DATABASE_URL="postgresql://postgres:user@db.xxxx.supabase.co:5432/postgres"
 
-# Auth.js secret (Generate one or ask lead)
-AUTH_SECRET="your_secret_here"
+# Auth.js secret (Contact lead developer for the secret)
+AUTH_SECRET="your_shared_secret_here"
 ```
 
 ### 4. Database Initialization
