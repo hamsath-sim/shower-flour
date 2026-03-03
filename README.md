@@ -58,6 +58,48 @@ A full-stack web application for managing baking courses, enrollments, and user 
 
 The project is configured for easy deployment on platforms like Vercel or Render.
 
-## Contributing
+## Team Member Quick Start
 
-Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
+Welcome to the team! Follow these steps to set up the project on your local machine.
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/hamsath-sim/shower-flour.git
+cd shower-flour
+```
+
+### 2. Install Dependencies
+Make sure you have [Node.js](https://nodejs.org/) installed, then run:
+```bash
+npm install
+```
+
+### 3. Environment Setup
+Create a `.env` file in the root directory. You can copy the values from the lead developer or use this template:
+```env
+# MongoDB Connection (Ask lead for dev DB or use your own)
+DATABASE_URL="mongodb+srv://..."
+
+# Auth.js secret (Generate one or ask lead)
+AUTH_SECRET="your_secret_here"
+```
+
+### 4. Database Initialization
+Generate the Prisma client:
+```bash
+npx prisma generate
+```
+
+### 5. Start Developing
+Run the development server:
+```bash
+npm run dev
+```
+The app will be available at [http://localhost:3000](http://localhost:3000).
+
+## Contribution Workflow
+
+1.  **Pull latest changes:** Always run `git pull origin main` before starting.
+2.  **Create a branch:** Work on a branch like `feature/your-task`.
+3.  **Commit often:** Use descriptive commit messages.
+4.  **Push and PR:** Push your branch and open a Pull Request for review.
