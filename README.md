@@ -1,6 +1,6 @@
 # Shower Flour Learning Platform
 
-A full-stack web application for managing baking courses, enrollments, and user authentication. Built with Next.js, Prisma, and MongoDB.
+A full-stack web application for managing baking courses, enrollments, and user authentication. Built with Next.js, Prisma, and Supabase (PostgreSQL).
 
 ## Features
 
@@ -13,7 +13,7 @@ A full-stack web application for managing baking courses, enrollments, and user 
 
 - **Frontend:** Next.js, Tailwind CSS
 - **Backend:** Next.js Server Actions, API Routes
-- **Database:** MongoDB with Prisma ORM
+- **Database:** Supabase (PostgreSQL) with Prisma ORM
 - **Authentication:** Auth.js (NextAuth.v5)
 
 ## Getting Started
@@ -21,7 +21,7 @@ A full-stack web application for managing baking courses, enrollments, and user 
 ### Prerequisites
 
 - Node.js (v18 or later)
-- MongoDB account and database URI
+- Supabase account and PostgreSQL database URI
 
 ### Installation
 
@@ -77,8 +77,8 @@ npm install
 ### 3. Environment Setup
 Create a `.env` file in the root directory. You can copy the values from the lead developer or use this template:
 ```env
-# MongoDB Connection (Ask lead for dev DB or use your own)
-DATABASE_URL="mongodb+srv://..."
+# Supabase PostgreSQL Connection (Ask lead for dev DB or use your own)
+DATABASE_URL="postgresql://postgres:..."
 
 # Auth.js secret (Generate one or ask lead)
 AUTH_SECRET="your_secret_here"
