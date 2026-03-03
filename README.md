@@ -1,36 +1,63 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Shower Flour Learning Platform
+
+A full-stack web application for managing baking courses, enrollments, and user authentication. Built with Next.js, Prisma, and MongoDB.
+
+## Features
+
+- **Course Management:** View and manage baking courses.
+- **User Authentication:** Secure login and registration using Auth.js.
+- **Admin Dashboard:** Manage enrollments, batches, and course content.
+- **Responsive Design:** Optimized for both desktop and mobile devices.
+
+## Tech Stack
+
+- **Frontend:** Next.js, Tailwind CSS
+- **Backend:** Next.js Server Actions, API Routes
+- **Database:** MongoDB with Prisma ORM
+- **Authentication:** Auth.js (NextAuth.v5)
 
 ## Getting Started
 
-First, run the development server:
+### Prerequisites
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Node.js (v18 or later)
+- MongoDB account and database URI
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Installation
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/hamsath-sim/shower-flour.git
+   cd shower-flour
+   ```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Set up environment variables:**
+   Create a `.env` file in the root directory and add the following:
+   ```env
+   DATABASE_URL="your_mongodb_connection_string"
+   AUTH_SECRET="your_auth_secret"
+   ```
 
-To learn more about Next.js, take a look at the following resources:
+4. **Initialize Prisma:**
+   ```bash
+   npx prisma generate
+   ```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+5. **Run the development server:**
+   ```bash
+   npm run dev
+   ```
+   Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Deployment
 
-## Deploy on Vercel
+The project is configured for easy deployment on platforms like Vercel or Render.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Contributing
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
