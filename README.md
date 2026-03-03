@@ -39,7 +39,7 @@ A full-stack web application for managing baking courses, enrollments, and user 
 3. **Set up environment variables:**
    Create a `.env` file in the root directory and add the following:
    ```env
-   DATABASE_URL="your_mongodb_connection_string"
+   DATABASE_URL="postgresql://postgres:user@db.xxxx.supabase.co:5432/postgres"
    AUTH_SECRET="your_auth_secret"
    ```
 
